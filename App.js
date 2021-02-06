@@ -1,6 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { SafeAreaView, StyleSheet, Text, TextInput, View } from "react-native";
+import {
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+  Button,
+} from "react-native";
 import { useState } from "react";
 
 export default function App() {
@@ -32,6 +39,7 @@ export default function App() {
         onChangeText={(text) => setCampus(text)}
         placeholder={campus}
       />
+      <Button style={styles.button} title="Submit" />
     </SafeAreaView>
   );
 }
@@ -44,11 +52,11 @@ const styles = StyleSheet.create({
   },
   header: {
     color: "#ffffff",
-    fontSize: 55,
+    fontSize: 60,
     paddingTop: 50,
+    paddingBottom: 20,
   },
   input: {
-    marginTop: 10,
     backgroundColor: "#ffffff",
     justifyContent: "center",
     height: 50,
@@ -56,5 +64,7 @@ const styles = StyleSheet.create({
     borderColor: "#7ec8e3",
     borderWidth: 3,
     borderRadius: 10,
+    marginBottom: 10,
   },
+  button: {},
 });
