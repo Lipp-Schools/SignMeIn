@@ -39,7 +39,7 @@ export default function App() {
         onChangeText={(text) => setCampus(text)}
         placeholder={campus}
       />
-      <Button style={styles.button} title="Submit" />
+      <Button style={styles.button} title="Submit" color={"#ffffff"} />
     </SafeAreaView>
   );
 }
@@ -64,9 +64,5 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 10,
     fontSize: 35,
-  },
-  button: {
-    backgroundColor: "#ffffff",
-    color: "#ffffff",
   },
 });
