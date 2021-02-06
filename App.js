@@ -23,21 +23,25 @@ export default function App() {
         style={styles.input}
         onChangeText={(text) => setMother(text)}
         placeholder={mother}
+        selectionColor="#000000"
       />
       <TextInput
         style={styles.input}
         onChangeText={(text) => setFather(text)}
         placeholder={father}
+        selectionColor="#000000"
       />
       <TextInput
         style={styles.input}
         onChangeText={(text) => setChild(text)}
         placeholder={child}
+        selectionColor="#000000"
       />
       <TextInput
         style={styles.input}
         onChangeText={(text) => setCampus(text)}
         placeholder={campus}
+        selectionColor="#000000"
       />
       <Button title="Submit" color={"#ffffff"} />
     </SafeAreaView>
