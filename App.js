@@ -8,6 +8,7 @@ import {
   View,
   Button,
 } from "react-native";
+import { Picker } from "@react-native-picker/picker";
 import { useState } from "react";
 
 export default function App() {
@@ -37,12 +38,15 @@ export default function App() {
         placeholder={child}
         selectionColor="#000000"
       />
-      <TextInput
-        style={styles.input}
-        onChangeText={(text) => setCampus(text)}
-        placeholder={campus}
-        selectionColor="#000000"
-      />
+      <Picker
+        selectedValue={campus}
+        style={styles.picker}
+        onValueChange={(itemValue, itemIndex) => setCampus(itemValue)}
+      >
+      <Picker.Item label="Galleria" value="galleria"/>
+      <Picker.Item label="Upper Kirby" value="upperkirby"/>
+      <Picker.Item label="Babble" value="babble"/>
+      </Picker>
       <Button title="Submit" color={"#ffffff"} />
     </SafeAreaView>
   );
@@ -68,5 +72,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 10,
     fontSize: 30,
+  },
+  picker: {
+    height: 60,
+    width: 300,
+    flex: 1,
   },
 });
