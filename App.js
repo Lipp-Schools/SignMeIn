@@ -59,12 +59,14 @@ const styles = StyleSheet.create({
   input: {
     backgroundColor: "#ffffff",
     justifyContent: "center",
-    height: 50,
+    height: 60,
     width: 300,
-    borderColor: "#7ec8e3",
-    borderWidth: 3,
     borderRadius: 10,
     marginBottom: 10,
+    fontSize: 35,
   },
-  button: {},
+  button: {
+    backgroundColor: "#ffffff",
+    color: "#ffffff",
+  },
 });
