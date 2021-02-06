@@ -39,7 +39,7 @@ export default function App() {
         onChangeText={(text) => setCampus(text)}
         placeholder={campus}
       />
-      <Button style={styles.button} title="Submit" color={"#ffffff"} />
+      <Button title="Submit" color={"#ffffff"} />
     </SafeAreaView>
   );
 }
