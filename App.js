@@ -74,8 +74,11 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
   picker: {
-    height: 60,
+    height: 40,
     width: 300,
     flex: 1,
+    color: "#ffffff",
+    backgroundColor: "#ffffff",
+    borderRadius: 10,
   },
 });
