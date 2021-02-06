@@ -43,9 +43,9 @@ export default function App() {
         style={styles.picker}
         onValueChange={(itemValue, itemIndex) => setCampus(itemValue)}
       >
-      <Picker.Item label="Galleria" value="galleria"/>
-      <Picker.Item label="Upper Kirby" value="upperkirby"/>
-      <Picker.Item label="Babble" value="babble"/>
+        <Picker.Item label="Galleria" value="galleria" />
+        <Picker.Item label="Upper Kirby" value="upperkirby" />
+        <Picker.Item label="Babble" value="babble" />
       </Picker>
       <Button title="Submit" color={"#ffffff"} />
     </SafeAreaView>
@@ -61,8 +61,8 @@ const styles = StyleSheet.create({
   header: {
     color: "#ffffff",
     fontSize: 60,
-    paddingTop: 50,
-    paddingBottom: 20,
+    paddingTop: 25,
+    paddingBottom: 5,
   },
   input: {
     backgroundColor: "#ffffff",
@@ -70,13 +70,11 @@ const styles = StyleSheet.create({
     height: 60,
     width: 300,
     borderRadius: 10,
-    marginBottom: 10,
+    marginBottom: 8,
     fontSize: 30,
   },
   picker: {
-    height: 40,
     width: 300,
-    flex: 1,
     color: "#ffffff",
     backgroundColor: "#ffffff",
     borderRadius: 10,
