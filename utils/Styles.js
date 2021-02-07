@@ -27,9 +27,6 @@ const Styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     borderRadius: 10,
   },
-  hyperlink: {
-    alignItems: "center",
-  },
 });
 
 export default Styles;
