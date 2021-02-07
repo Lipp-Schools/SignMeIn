@@ -4,8 +4,8 @@ import Styles from "./utils/Styles";
 
 export default function App() {
   return (
-    <SafeAreaview style={Styles.container}>
+    <SafeAreaView style={Styles.container}>
       <Text>Test</Text>
-    </SafeAreaview>
+    </SafeAreaView>
   );
 }
