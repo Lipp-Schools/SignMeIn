@@ -26,20 +26,20 @@ export default function Register() {
         selectionColor="#000000"
       />
       <TextInput
-        style={styles.input}
+        style={Styles.input}
         onChangeText={(text) => setFather(text)}
         placeholder={father}
         selectionColor="#000000"
       />
       <TextInput
-        style={styles.input}
+        style={Styles.input}
         onChangeText={(text) => setChild(text)}
         placeholder={child}
         selectionColor="#000000"
       />
       <Picker
         selectedValue={campus}
-        style={styles.picker}
+        style={Styles.picker}
         onValueChange={(itemValue, itemIndex) => setCampus(itemValue)}
       >
         <Picker.Item label="Galleria" value="galleria" />
