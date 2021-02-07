@@ -29,7 +29,7 @@ const Styles = StyleSheet.create({
   },
   hyperlink: {
     alignItems: "center",
-  }
+  },
 });
 
 export default Styles;
