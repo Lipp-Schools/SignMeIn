@@ -18,7 +18,7 @@ const Styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#ffffff",
     paddingBottom: "100%",
-    paddingTop: "25%",
+    paddingTop: "20%",
     borderTopLeftRadius: 50,
   },
   input: {
