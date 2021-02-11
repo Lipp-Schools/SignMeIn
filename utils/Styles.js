@@ -39,12 +39,6 @@ const Styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     borderRadius: 10,
   },
-  hyperlink: {
-    justifyContent: "center",
-    flex: 1,
-    backgroundColor: "#050a30",
-    alignItems: "center",
-  },
 });
 
 export default Styles;
