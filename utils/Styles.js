@@ -3,14 +3,23 @@ import { StyleSheet } from "react-native";
 const Styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#050a30",
-    alignItems: "center",
+    backgroundColor: "#050A30",
+  },
+  headerWrap: {
+    paddingTop: 25,
+    paddingBottom: 30,
   },
   header: {
-    color: "#ffffff",
-    fontSize: 60,
-    paddingTop: 25,
-    paddingBottom: 5,
+    color: "#7EC8E3",
+    fontSize: 40,
+    paddingLeft: "10%",
+  },
+  inputWrap: {
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#ffffff",
+    paddingBottom: "100%",
+    paddingTop: "10%",
   },
   input: {
     backgroundColor: "#ffffff",
@@ -20,6 +29,9 @@ const Styles = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 8,
     fontSize: 30,
+    borderColor: "#000C66",
+    borderWidth: 3.5,
+    paddingLeft: 4,
   },
   picker: {
     width: 300,

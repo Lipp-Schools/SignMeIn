@@ -5,6 +5,7 @@ import {
   Text,
   TextInput,
   Button,
+  View,
 } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { useState } from "react";
@@ -18,26 +19,30 @@ export default function Register() {
 
   return (
     <SafeAreaView style={Styles.container}>
-      <Text style={Styles.header}>Register</Text>
-      <TextInput
-        style={Styles.input}
-        onChangeText={(text) => setMother(text)}
-        placeholder={mother}
-        selectionColor="#000000"
-      />
-      <TextInput
-        style={Styles.input}
-        onChangeText={(text) => setFather(text)}
-        placeholder={father}
-        selectionColor="#000000"
-      />
-      <TextInput
-        style={Styles.input}
-        onChangeText={(text) => setChild(text)}
-        placeholder={child}
-        selectionColor="#000000"
-      />
-      <Picker
+      <View style={Styles.headerWrap}>
+        <Text style={Styles.header}>Register</Text>
+      </View>
+      <View style={Styles.inputWrap}>
+        <TextInput
+          style={Styles.input}
+          onChangeText={(text) => setMother(text)}
+          placeholder={mother}
+          selectionColor="#000000"
+        />
+        <TextInput
+          style={Styles.input}
+          onChangeText={(text) => setFather(text)}
+          placeholder={father}
+          selectionColor="#000000"
+        />
+        <TextInput
+          style={Styles.input}
+          onChangeText={(text) => setChild(text)}
+          placeholder={child}
+          selectionColor="#000000"
+        />
+      </View>
+      {/* <Picker
         selectedValue={campus}
         style={Styles.picker}
         onValueChange={(itemValue, itemIndex) => setCampus(itemValue)}
@@ -45,7 +50,7 @@ export default function Register() {
         <Picker.Item label="Galleria" value="galleria" />
         <Picker.Item label="Upper Kirby" value="upperkirby" />
         <Picker.Item label="Babble" value="babble" />
-      </Picker>
+      </Picker> */}
       <Button title="Submit" color={"#ffffff"} />
     </SafeAreaView>
   );
