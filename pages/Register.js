@@ -41,6 +41,7 @@ export default function Register() {
           placeholder={child}
           selectionColor="#000000"
         />
+        <Button title="Submit" color={"#7EC8E3"} />
       </View>
       {/* <Picker
         selectedValue={campus}
@@ -51,7 +52,6 @@ export default function Register() {
         <Picker.Item label="Upper Kirby" value="upperkirby" />
         <Picker.Item label="Babble" value="babble" />
       </Picker> */}
-      <Button title="Submit" color={"#ffffff"} />
     </SafeAreaView>
   );
 }
