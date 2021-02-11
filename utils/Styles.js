@@ -24,9 +24,8 @@ const Styles = StyleSheet.create({
   },
   input: {
     backgroundColor: "#ffffff",
-    justifyContent: "center",
-    height: 60,
-    width: 300,
+    height: "24.5%",
+    width: "80%",
     borderRadius: 10,
     marginBottom: "5%",
     fontSize: 25,
