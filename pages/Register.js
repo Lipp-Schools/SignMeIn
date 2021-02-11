@@ -41,7 +41,7 @@ export default function Register() {
           placeholder={child}
           selectionColor="#000000"
         />
-        <Button title="Submit" color={"#7EC8E3"} />
+        <Button title="Submit" color={"#7EC8E3"} style={Styles.button} />
       </View>
       {/* <Picker
         selectedValue={campus}

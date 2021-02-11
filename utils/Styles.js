@@ -38,6 +38,9 @@ const Styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     borderRadius: 10,
   },
+  button: {
+    
+  }
 });
 
 export default Styles;
