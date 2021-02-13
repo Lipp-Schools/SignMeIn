@@ -10,6 +10,7 @@ import {
 import { Picker } from "@react-native-picker/picker";
 import { useState } from "react";
 import Styles from "../utils/Styles";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 export default function Register() {
   const [mother, setMother] = useState("Mother");
@@ -41,7 +42,11 @@ export default function Register() {
           placeholder={child}
           selectionColor="#000000"
         />
-        <Button title="Submit" color={"#7EC8E3"} style={Styles.button} />
+        <TouchableOpacity>
+          <View style={Styles.button}>
+            <Text style={Styles.buttonText}>Submit</Text>
+          </View>
+        </TouchableOpacity>
       </View>
       {/* <Picker
         selectedValue={campus}
