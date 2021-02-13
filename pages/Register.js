@@ -42,21 +42,21 @@ export default function Register() {
           placeholder={child}
           selectionColor="#000000"
         />
+        <Picker
+          selectedValue={campus}
+          style={Styles.picker}
+          onValueChange={(itemValue, itemIndex) => setCampus(itemValue)}
+        >
+          <Picker.Item label="Galleria" value="galleria" />
+          <Picker.Item label="Upper Kirby" value="upperkirby" />
+          <Picker.Item label="Babble" value="babble" />
+        </Picker>
         <TouchableOpacity>
           <View style={Styles.button}>
             <Text style={Styles.buttonText}>Submit</Text>
           </View>
         </TouchableOpacity>
       </View>
-      {/* <Picker
-        selectedValue={campus}
-        style={Styles.picker}
-        onValueChange={(itemValue, itemIndex) => setCampus(itemValue)}
-      >
-        <Picker.Item label="Galleria" value="galleria" />
-        <Picker.Item label="Upper Kirby" value="upperkirby" />
-        <Picker.Item label="Babble" value="babble" />
-      </Picker> */}
     </SafeAreaView>
   );
 }
