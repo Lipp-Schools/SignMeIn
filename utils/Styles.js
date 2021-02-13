@@ -39,12 +39,14 @@ const Styles = StyleSheet.create({
     borderRadius: 10,
   },
   button: {
-    flexDirection: "row",
-    backgroundColor: "#050A30",
-    width: "25%" 
+    borderRadius: 20,
+    paddingVertical: 20,
+    paddingHorizontal: 75,
+    marginTop: 25,
+    backgroundColor: "#050A30"
   },
   buttonText: {
-    
+    color: "#7EC8E3"
   }
 });
 
