@@ -42,11 +42,13 @@ const Styles = StyleSheet.create({
     borderRadius: 30,
     paddingVertical: 20,
     paddingHorizontal: 85,
-    backgroundColor: "#050A30"
+    marginTop: 10,
+    backgroundColor: "#050A30",
   },
   buttonText: {
-    color: "#7EC8E3"
-  }
+    color: "#7EC8E3",
+    fontSize: 20,
+  },
 });
 
 export default Styles;
