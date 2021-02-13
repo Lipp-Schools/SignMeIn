@@ -12,25 +12,25 @@ const Styles = StyleSheet.create({
   header: {
     color: "#7EC8E3",
     fontSize: 40,
-    paddingLeft: "10%",
+    paddingLeft: 40,
   },
   inputWrap: {
     alignItems: "center",
     backgroundColor: "#ffffff",
     paddingBottom: "100%",
-    paddingTop: "20%",
+    paddingTop: 100,
     borderTopLeftRadius: 50,
   },
   input: {
     backgroundColor: "#ffffff",
-    height: "27%",
-    width: "80%",
+    height: 75,
+    width: 300,
     borderRadius: 15,
-    marginBottom: "4.5%",
+    marginBottom: 15,
     fontSize: 25,
     borderColor: "#000C66",
     borderWidth: 3.5,
-    paddingLeft: "1.5%",
+    paddingLeft: 5,
   },
   picker: {
     width: 300,
@@ -39,10 +39,9 @@ const Styles = StyleSheet.create({
     borderRadius: 10,
   },
   button: {
-    borderRadius: 20,
+    borderRadius: 30,
     paddingVertical: 20,
-    paddingHorizontal: 75,
-    marginTop: 25,
+    paddingHorizontal: 85,
     backgroundColor: "#050A30"
   },
   buttonText: {
