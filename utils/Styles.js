@@ -23,9 +23,9 @@ const Styles = StyleSheet.create({
   },
   input: {
     backgroundColor: "#ffffff",
-    height: 75,
+    height: 70,
     width: 300,
-    borderRadius: 15,
+    borderRadius: 20,
     marginBottom: 15,
     fontSize: 25,
     borderColor: "#000C66",
@@ -39,15 +39,15 @@ const Styles = StyleSheet.create({
     borderRadius: 10,
   },
   button: {
-    borderRadius: 30,
+    borderRadius: 40,
     paddingVertical: 20,
-    paddingHorizontal: 85,
+    paddingHorizontal: 80,
     marginTop: 10,
     backgroundColor: "#050A30",
   },
   buttonText: {
     color: "#7EC8E3",
-    fontSize: 20,
+    fontSize: 18,
   },
 });
 
