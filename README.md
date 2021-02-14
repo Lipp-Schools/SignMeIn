@@ -7,4 +7,5 @@ An application that conveniently facilitates sign in/out of children at LIPP usi
 - React Native
 - Expo
 - Firebase
+- Firebase ML
 - Firestore
