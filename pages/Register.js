@@ -33,19 +33,19 @@ export default function Register() {
       <View style={Styles.inputWrap}>
         <TextInput
           style={Styles.input}
-          onChangeText={(text) => setMother(text)}
+          onChangeText={(text) => setMother(text.toString().toLowerCase())}
           placeholder={mother}
           selectionColor="#000000"
         />
         <TextInput
           style={Styles.input}
-          onChangeText={(text) => setFather(text)}
+          onChangeText={(text) => setFather(text.toString().toLowerCase())}
           placeholder={father}
           selectionColor="#000000"
         />
         <TextInput
           style={Styles.input}
-          onChangeText={(text) => setChild(text)}
+          onChangeText={(text) => setChild(text.toString().toLowerCase())}
           placeholder={child}
           selectionColor="#000000"
         />
