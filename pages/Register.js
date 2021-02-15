@@ -18,6 +18,13 @@ export default function Register() {
   const [child, setChild] = useState("Child");
   const [campus, setCampus] = useState("Campus");
 
+  const user = {
+    mother: mother,
+    father: father,
+    child: child,
+    campus: campus
+  }
+
   return (
     <SafeAreaView style={Styles.container}>
       <View style={Styles.headerWrap}>
