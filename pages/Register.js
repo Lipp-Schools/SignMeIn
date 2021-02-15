@@ -11,6 +11,7 @@ import { Picker } from "@react-native-picker/picker";
 import { useState } from "react";
 import Styles from "../utils/Styles";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import CreateUser from "../utils/firebase/CreateUser";
 
 export default function Register() {
   const [mother, setMother] = useState("Mother");
@@ -58,7 +59,7 @@ export default function Register() {
           <Picker.Item label="Upper Kirby" value="upperkirby" />
           <Picker.Item label="Babble" value="babble" />
         </Picker>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={CreateUser(user)}>
           <View style={Styles.button}>
             <Text style={Styles.buttonText}>Submit</Text>
           </View>
