@@ -23,8 +23,8 @@ export default function Register() {
     mother: mother,
     father: father,
     child: child,
-    campus: campus
-  }
+    campus: campus,
+  };
 
   return (
     <SafeAreaView style={Styles.container}>
