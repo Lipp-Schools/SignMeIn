@@ -4,7 +4,5 @@ import Styles from "./utils/Styles";
 import Register from "./pages/Register";
 
 export default function App() {
-  return (
-    <Register />
-  );
+  return <Register />;
 }
