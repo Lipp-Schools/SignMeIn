@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 import Styles from "./utils/Styles";
 import Register from "./pages/Register";
 import { NativeRouter, Route, Link } from "react-router-native";
@@ -13,5 +13,6 @@ export default function App() {
         </Link>
       </View>
     </View>
+    <Route exact path="/register" component={Register} />
   </NativeRouter>;
 }
