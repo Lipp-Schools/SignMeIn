@@ -7,14 +7,7 @@ import { NativeRouter, Route, Link } from "react-router-native";
 export default function App() {
   return (
     <NativeRouter>
-      <View style={Styles.container}>
-        <View style={Styles.inputWrap}>
-          <Link to="/register" style={Styles.button}>
-            <Text style={Styles.buttonText}>Register</Text>
-          </Link>
-        </View>
-      </View>
-      <Route exact path="/register" component={Register} />
+      <Route exact path="/" component={Register} />
     </NativeRouter>
   );
 }
