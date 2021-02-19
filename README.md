@@ -1,11 +1,10 @@
 # SignMeIn
 
-An application that conveniently facilitates sign in/out of children at LIPP using bioID
+An application that conveniently facilitates simple sign in of children at LIPP.
 
 ## Tech Stack
 
 - React Native
 - Expo
 - Firebase
-- Firebase ML
 - Firestore
