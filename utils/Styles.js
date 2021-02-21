@@ -17,7 +17,7 @@ const Styles = StyleSheet.create({
   inputWrap: {
     alignItems: "center",
     backgroundColor: "#ffffff",
-    paddingBottom: "100%",
+    paddingBottom: "150%",
     paddingTop: 30,
     borderTopLeftRadius: 50,
   },

@@ -12,6 +12,7 @@ import { useState } from "react";
 import Styles from "../utils/Styles";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import CreateUser from "../utils/firebase/CreateUser";
+import { Link } from "react-router-native";
 
 export default function Register() {
   const [mother, setMother] = useState("Mother");
@@ -60,15 +61,17 @@ export default function Register() {
           <Picker.Item label="Babble" value="babble" />
         </Picker>
         <View>
-          <TouchableOpacity
-            onPress={() => {
-              return CreateUser(user);
-            }}
-          >
-            <View style={Styles.button}>
-              <Text style={Styles.buttonText}>Submit</Text>
-            </View>
-          </TouchableOpacity>
+          <Link to="/signin">
+            <TouchableOpacity
+              onPress={() => {
+                return CreateUser(user);
+              }}
+            >
+              <View style={Styles.button}>
+                <Text style={Styles.buttonText}>Submit</Text>
+              </View>
+            </TouchableOpacity>
+          </Link>
         </View>
       </View>
     </SafeAreaView>
