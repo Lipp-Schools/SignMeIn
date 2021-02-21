@@ -16,5 +16,6 @@ export default function SignIn() {
         />
       </View>
     </SafeAreaView>
+
   );
 }
