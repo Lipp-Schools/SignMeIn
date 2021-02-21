@@ -61,15 +61,17 @@ export default function Register() {
           <Picker.Item label="Babble" value="babble" />
         </Picker>
         <View>
-          <TouchableOpacity
-            onPress={() => {
-              return CreateUser(user);
-            }}
-          >
-            <View style={Styles.button}>
-              <Text style={Styles.buttonText}>Submit</Text>
-            </View>
-          </TouchableOpacity>
+          <Link to="/signin">
+            <TouchableOpacity
+              onPress={() => {
+                return CreateUser(user);
+              }}
+            >
+              <View style={Styles.button}>
+                <Text style={Styles.buttonText}>Submit</Text>
+              </View>
+            </TouchableOpacity>
+          </Link>
         </View>
       </View>
     </SafeAreaView>
