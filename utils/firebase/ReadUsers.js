@@ -6,6 +6,8 @@ export default function ReadUsers() {
   db.collection("users")
     .get()
     .then((snapshot) => {
-      console.log(snapshot.docs);
+      snapshot.docs.forEach((user) => {
+        console.log(user.id, user.data());
+      });
     });
 }
