@@ -7,11 +7,13 @@ import Styles from "../Styles";
 
 export default function ReadAndDisplayUsers() {
   const [users, setUsers] = useState([]);
+
   const getUsers = async () => {
     try {
       const list = [];
       let snapshot = await db.collection("users").get();
       snapshot.forEach((user) => {
+        id = user.id
         list.push(user.data());
       });
       setUsers([...list]);
@@ -25,9 +27,5 @@ export default function ReadAndDisplayUsers() {
     getUsers();
   }, []);
 
-  return (
-    <View>
-      <Text style={Styles.userDisplay}>{users.length}</Text>
-    </View>
-  );
+  return users.map((user) => <Text key={user.Object}>{user.Object}</Text>);
 }
