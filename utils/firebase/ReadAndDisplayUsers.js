@@ -33,11 +33,16 @@ const Users = () => {
     <View>
       {users?.map((user) => (
         <Text key={user.id} style={Styles.userDisplay}>
-          {user.campus}, {user.child}, {user.father}, {user.mother}
+          {titleCase(user.campus)}: {titleCase(user.child)},{" "}
+          {titleCase(user.father)}, {titleCase(user.mother)}
         </Text>
       ))}
     </View>
   );
+};
+
+const titleCase = (str) => {
+  return str.charAt(0).toUpperCase() + str.slice(1);
 };
 
 export default Users;
