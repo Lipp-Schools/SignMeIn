@@ -27,7 +27,7 @@ export default function ReadAndDisplayUsers() {
 
   return (
     <View>
-      <Text style={Styles.userDisplay}>{users}</Text>
+      <Text style={Styles.userDisplay}>{users.length}</Text>
     </View>
   );
 }
