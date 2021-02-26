@@ -1,6 +1,7 @@
 import React from "react";
 import ReadUsers from "./firebase/ReadUsers";
 import Styles from "../utils/Styles";
+import { View } from "react-native";
 
 export default function DisplayUsers() {
   const users = ReadUsers();
@@ -14,5 +15,5 @@ export default function DisplayUsers() {
     );
     display.push(row);
   }
-  return { display };
+  return <View>{display}</View>;
 }

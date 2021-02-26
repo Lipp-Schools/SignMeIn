@@ -2,6 +2,7 @@ import { SafeAreaView, View, Text, TextInput } from "react-native";
 import Styles from "../utils/Styles";
 import React from "react";
 import ReadUsers from "../utils/firebase/ReadUsers";
+import DisplayUsers from "../utils/DisplayUsers";
 
 export default function SignIn() {
   return (
@@ -15,6 +16,7 @@ export default function SignIn() {
           placeholder={"Search"}
           selectionColor="#000000"
         />
+        <DisplayUsers />
       </View>
     </SafeAreaView>
   );

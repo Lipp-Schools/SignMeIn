@@ -48,7 +48,7 @@ const Styles = StyleSheet.create({
   userDisplay: {
     backgroundColor: "#050A30",
     color: "#7EC8E3",
-    width: "100"
+    width: "100",
   },
 });
 
