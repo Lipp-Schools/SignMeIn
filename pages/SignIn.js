@@ -16,7 +16,7 @@ export default function SignIn() {
           placeholder={"Search"}
           selectionColor="#000000"
         />
-        <DisplayUsers />
+        {/* <DisplayUsers /> */}
       </View>
     </SafeAreaView>
   );
