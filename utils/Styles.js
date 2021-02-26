@@ -45,6 +45,11 @@ const Styles = StyleSheet.create({
     color: "#7EC8E3",
     fontSize: 18,
   },
+  userDisplay: {
+    backgroundColor: "#050A30",
+    color: "#7EC8E3",
+    width: "100"
+  },
 });
 
 export default Styles;

@@ -4,7 +4,6 @@ import React from "react";
 import ReadUsers from "../utils/firebase/ReadUsers";
 
 export default function SignIn() {
-  ReadUsers();
   return (
     <SafeAreaView style={Styles.container}>
       <View style={Styles.headerWrap}>
