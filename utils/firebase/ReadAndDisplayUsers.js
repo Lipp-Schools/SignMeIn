@@ -29,11 +29,15 @@ const Users = () => {
     };
   }, [setUsers]);
 
-  return users?.map((user) => (
-    <Text key={user.id}>
-      {user.campus}, {user.child}, {user.father}, {user.mother}
-    </Text>
-  ));
+  return (
+    <View>
+      {users?.map((user) => (
+        <Text key={user.id} style={Styles.userDisplay}>
+          {user.campus}, {user.child}, {user.father}, {user.mother}
+        </Text>
+      ))}
+    </View>
+  );
 };
 
 export default Users;
