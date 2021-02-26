@@ -4,7 +4,6 @@ import React from "react";
 import ReadAndDisplayUsers from "../utils/firebase/ReadAndDisplayUsers";
 
 export default function SignIn() {
-  ReadAndDisplayUsers();
   return (
     <SafeAreaView style={Styles.container}>
       <View style={Styles.headerWrap}>
@@ -16,7 +15,7 @@ export default function SignIn() {
           placeholder={"Search"}
           selectionColor="#000000"
         />
-        {/* <DisplayUsers /> */}
+        <ReadAndDisplayUsers />
       </View>
     </SafeAreaView>
   );
