@@ -5,26 +5,35 @@ import { db } from "./Firebase";
 import { Text } from "react-native";
 import Styles from "../Styles";
 
-export default function ReadAndDisplayUsers() {
-  const [users, setUsers] = useState([]);
-
-  const getUsers = async () => {
-    try {
-      const list = [];
-      let snapshot = await db.collection("users").get();
-      snapshot.forEach((user) => {
-        list.push(user.data());
-      });
-      setUsers([...list]);
-      console.log(list);
-    } catch (e) {
-      console.log(e);
-    }
-  };
+const Users = () => {
+  const [users, setUsers] = useState();
 
   useEffect(() => {
-    getUsers();
-  }, []);
+    let commit = true;
 
-  return users.map((user) => <Text key={user.Object}>{user.Object}</Text>);
-}
+    firebase
+      .firestore()
+      .collection("users")
+      .get()
+      .then(({ docs }) => {
+        if (!commit) return;
+        setUsers(docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+      })
+      .catch((error) => {
+        if (!commit) return;
+        console.error(error);
+      });
+
+    return () => {
+      commit = false;
+    };
+  }, [setUsers]);
+
+  return users?.map((user) => (
+    <Text key={user.id}>
+      {user.campus}, {user.child}, {user.father}, {user.mother}
+    </Text>
+  ));
+};
+
+export default Users;
