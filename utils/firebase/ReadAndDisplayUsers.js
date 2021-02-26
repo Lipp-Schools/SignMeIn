@@ -13,7 +13,6 @@ export default function ReadAndDisplayUsers() {
       const list = [];
       let snapshot = await db.collection("users").get();
       snapshot.forEach((user) => {
-        id = user.id
         list.push(user.data());
       });
       setUsers([...list]);
