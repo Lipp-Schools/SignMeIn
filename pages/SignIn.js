@@ -1,10 +1,10 @@
 import { SafeAreaView, View, Text, TextInput } from "react-native";
 import Styles from "../utils/Styles";
 import React from "react";
-import ReadUsers from "../utils/firebase/ReadUsers";
-import DisplayUsers from "../utils/DisplayUsers";
+import ReadAndDisplayUsers from "../utils/firebase/ReadAndDisplayUsers";
 
 export default function SignIn() {
+  ReadAndDisplayUsers();
   return (
     <SafeAreaView style={Styles.container}>
       <View style={Styles.headerWrap}>
