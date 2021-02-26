@@ -30,11 +30,11 @@ const Users = () => {
   }, [setUsers]);
 
   return (
-    <View>
+    <View style={Styles.button}>
       {users?.map((user) => (
-        <Text key={user.id} style={Styles.userDisplay}>
-          {titleCase(user.campus)}: {titleCase(user.child)},{" "}
-          {titleCase(user.father)}, {titleCase(user.mother)}
+        <Text key={user.id} style={Styles.buttonText}>
+          {titleCase(user.campus)}: {titleCase(user.child)}{" "}
+          {titleCase(user.father)} {titleCase(user.mother)}
         </Text>
       ))}
     </View>
