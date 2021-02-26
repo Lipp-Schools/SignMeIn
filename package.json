@@ -9,12 +9,15 @@
   },
   "dependencies": {
     "@react-native-picker/picker": "^1.9.11",
+    "@react-navigation/bottom-tabs": "^5.11.8",
+    "@react-navigation/native": "^5.9.3",
     "expo": "^40.0.1",
     "firebase": "7.9.0",
     "react": "^17.0.1",
     "react-native": "^0.63.4",
     "react-native-gesture-handler": "^1.10.1",
     "react-native-picker": "^4.3.7",
+    "react-native-screens": "^2.18.0",
     "react-router-native": "^5.2.0"
   },
   "devDependencies": {
