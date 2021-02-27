@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator tabBarOptions={{ activeTintColor: "#7EC8E3" }}>
         <Tab.Screen name="Sign In" component={SignIn} />
         <Tab.Screen name="Register" component={Register} />
       </Tab.Navigator>
