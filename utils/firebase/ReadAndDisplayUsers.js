@@ -40,7 +40,7 @@ const Users = () => {
       <ScrollView style={Styles.scrollView}>
         {users?.map((user) => (
           <View style={Styles.signInButtonWrap}>
-            <TouchableOpacity style={Styles.signInButton}>
+            <TouchableOpacity style={Styles.signInButton} onPress={signInModal}>
               <Text key={user.id} style={Styles.signInButtonText}>
                 {titleCase(user.campus)}: {titleCase(user.child)}{" "}
                 {titleCase(user.father)} {titleCase(user.mother)}
