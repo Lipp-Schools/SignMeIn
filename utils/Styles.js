@@ -46,7 +46,7 @@ const Styles = StyleSheet.create({
     fontSize: 18,
   },
   signInButton: {
-    borderRadius: 40,
+    borderRadius: 50,
     paddingVertical: 40,
     paddingHorizontal: 40,
     backgroundColor: "#050A30",
@@ -58,6 +58,10 @@ const Styles = StyleSheet.create({
     alignContent: "center",
     textAlignVertical: "center",
   },
+  scrollView: {
+    marginBottom: -100,
+    marginTop: -20,
+  }
 });
 
 export default Styles;

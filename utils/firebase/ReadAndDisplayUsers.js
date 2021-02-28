@@ -31,7 +31,7 @@ const Users = () => {
 
   return (
     <View style={Styles.inputWrap}>
-      <ScrollView>
+      <ScrollView style={Styles.scrollView}>
         {users?.map((user) => (
           <TouchableOpacity style={Styles.signInButton}> 
             <Text key={user.id} style={Styles.signInButtonText}>
