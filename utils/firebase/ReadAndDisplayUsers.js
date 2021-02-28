@@ -1,6 +1,12 @@
 import firebase from "./Firebase";
 import React, { useState, useEffect } from "react";
-import { ScrollView, Touchable, TouchableOpacity, View } from "react-native";
+import {
+  Modal,
+  ScrollView,
+  Touchable,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { db } from "./Firebase";
 import { Text } from "react-native";
 import Styles from "../Styles";
@@ -49,6 +55,21 @@ const Users = () => {
 
 const titleCase = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
+};
+
+const signInModal = (id) => {
+  const [visible, setModalVisible] = useState(false);
+  return (
+    <Modal
+      style={Styles.modal}
+      animationType="slide"
+      transparent={true}
+      visible={visible}
+      onRequestClose={() => {
+        setModalVisible(!visible);
+      }}
+    />
+  );
 };
 
 export default Users;
