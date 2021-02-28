@@ -47,8 +47,8 @@ const Styles = StyleSheet.create({
   },
   signInButton: {
     borderRadius: 50,
-    paddingVertical: 20,
-    paddingHorizontal: 40,
+    paddingVertical: 25,
+    paddingHorizontal: 15,
     backgroundColor: "#050A30",
   },
   signInButtonText: {
