@@ -57,7 +57,7 @@ const titleCase = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
 
-const signInModal = (id) => {
+const signInModal = () => {
   const [visible, setModalVisible] = useState(false);
   return (
     <Modal
