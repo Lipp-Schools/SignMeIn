@@ -17,7 +17,7 @@ const Styles = StyleSheet.create({
   inputWrap: {
     alignItems: "center",
     backgroundColor: "#ffffff",
-    paddingBottom: "150%",
+    paddingBottom: 150,
     paddingTop: 30,
     borderTopLeftRadius: 50,
   },
@@ -44,6 +44,19 @@ const Styles = StyleSheet.create({
   buttonText: {
     color: "#7EC8E3",
     fontSize: 18,
+  },
+  signInButton: {
+    borderRadius: 40,
+    paddingVertical: 40,
+    paddingHorizontal: 40,
+    backgroundColor: "#050A30",
+  },
+  signInButtonText: {
+    color: "#7EC8E3",
+    fontSize: 20,
+    alignItems: "center",
+    alignContent: "center",
+    textAlignVertical: "center",
   },
 });
 

@@ -1,6 +1,6 @@
 import firebase from "./Firebase";
 import React, { useState, useEffect } from "react";
-import { View } from "react-native";
+import { ScrollView, Touchable, TouchableOpacity, View } from "react-native";
 import { db } from "./Firebase";
 import { Text } from "react-native";
 import Styles from "../Styles";
@@ -30,15 +30,17 @@ const Users = () => {
   }, [setUsers]);
 
   return (
-    <View>
-      {users?.map((user) => (
-        <View style={Styles.button}>
-          <Text key={user.id} style={Styles.buttonText}>
-            {titleCase(user.campus)}: {titleCase(user.child)}{" "}
-            {titleCase(user.father)} {titleCase(user.mother)}
-          </Text>
-        </View>
-      ))}
+    <View style={Styles.inputWrap}>
+      <ScrollView>
+        {users?.map((user) => (
+          <TouchableOpacity style={Styles.signInButton}> 
+            <Text key={user.id} style={Styles.signInButtonText}>
+              {titleCase(user.campus)}: {titleCase(user.child)}{" "}
+              {titleCase(user.father)} {titleCase(user.mother)}
+            </Text>
+          </TouchableOpacity>
+        ))}
+      </ScrollView>
     </View>
   );
 };
