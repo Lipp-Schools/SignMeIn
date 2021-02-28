@@ -47,7 +47,7 @@ const Styles = StyleSheet.create({
   },
   signInButton: {
     borderRadius: 50,
-    paddingVertical: 40,
+    paddingVertical: 20,
     paddingHorizontal: 40,
     backgroundColor: "#050A30",
   },
@@ -61,7 +61,10 @@ const Styles = StyleSheet.create({
   scrollView: {
     marginBottom: -100,
     marginTop: -20,
-  }
+  },
+  signInButtonWrap: {
+    margin: 2,
+  },
 });
 
 export default Styles;

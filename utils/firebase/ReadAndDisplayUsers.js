@@ -33,12 +33,14 @@ const Users = () => {
     <View style={Styles.inputWrap}>
       <ScrollView style={Styles.scrollView}>
         {users?.map((user) => (
-          <TouchableOpacity style={Styles.signInButton}> 
-            <Text key={user.id} style={Styles.signInButtonText}>
-              {titleCase(user.campus)}: {titleCase(user.child)}{" "}
-              {titleCase(user.father)} {titleCase(user.mother)}
-            </Text>
-          </TouchableOpacity>
+          <View style={Styles.signInButtonWrap}>
+            <TouchableOpacity style={Styles.signInButton}>
+              <Text key={user.id} style={Styles.signInButtonText}>
+                {titleCase(user.campus)}: {titleCase(user.child)}{" "}
+                {titleCase(user.father)} {titleCase(user.mother)}
+              </Text>
+            </TouchableOpacity>
+          </View>
         ))}
       </ScrollView>
     </View>
