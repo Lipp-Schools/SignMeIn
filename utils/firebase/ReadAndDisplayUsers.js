@@ -40,7 +40,7 @@ const Users = () => {
       <ScrollView style={Styles.scrollView}>
         {users?.map((user) => (
           <View style={Styles.signInButtonWrap}>
-            <TouchableOpacity style={Styles.signInButton} onPress={signInModal}>
+            <TouchableOpacity style={Styles.signInButton}>
               <Text key={user.id} style={Styles.signInButtonText}>
                 {titleCase(user.campus)}: {titleCase(user.child)}{" "}
                 {titleCase(user.father)} {titleCase(user.mother)}
@@ -55,21 +55,6 @@ const Users = () => {
 
 const titleCase = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
-};
-
-const signInModal = () => {
-  const [visible, setModalVisible] = useState(false);
-  return (
-    <Modal
-      style={Styles.modal}
-      animationType="slide"
-      transparent={true}
-      visible={visible}
-      onRequestClose={() => {
-        setModalVisible(!visible);
-      }}
-    />
-  );
 };
 
 export default Users;
