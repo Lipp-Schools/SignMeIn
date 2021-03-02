@@ -76,8 +76,15 @@ const Styles = StyleSheet.create({
   },
   modalText: {
     marginBottom: 15,
-    textAlign: "center"
-  }
+    textAlign: "center",
+  },
+  buttonModal: {
+    borderRadius: 40,
+    paddingVertical: 25,
+    paddingHorizontal: 90,
+    backgroundColor: "#050A30",
+    marginBottom: 10 ,
+  },
 });
 
 export default Styles;

@@ -43,12 +43,12 @@ const Users = () => {
           <View style={Styles.modalWrap}>
             <View style={Styles.modal}>
               <TouchableOpacity>
-                <View style={Styles.button}>
+                <View style={Styles.buttonModal}>
                   <Text style={Styles.buttonText}>Submit</Text>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity onPress={() => setVisible(false)}>
-                <View style={Styles.button}>
+                <View style={Styles.buttonModal}>
                   <Text style={Styles.buttonText}>Return</Text>
                 </View>
               </TouchableOpacity>
