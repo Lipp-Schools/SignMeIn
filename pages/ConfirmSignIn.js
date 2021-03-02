@@ -1,7 +1,6 @@
-import { SafeAreaView, View, Text, TextInput, Modal } from "react-native";
-import Styles from "../utils/Styles";
+import { SafeAreaView, View, Text, TextInput } from "react-native";
+import Styles from "../utils/Styles";www
 import React from "react";
-import ReadAndDisplayUsers from "../utils/firebase/ReadAndDisplayUsers";
 
 export default function ConfirmSignIn() {
   return (
