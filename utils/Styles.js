@@ -65,9 +65,19 @@ const Styles = StyleSheet.create({
   signInButtonWrap: {
     margin: 2,
   },
+  modalWrap: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 22,
+  },
   modal: {
     margin: 20,
   },
+  modalText: {
+    marginBottom: 15,
+    textAlign: "center"
+  }
 });
 
 export default Styles;
