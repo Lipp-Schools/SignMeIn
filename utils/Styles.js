@@ -59,8 +59,8 @@ const Styles = StyleSheet.create({
     textAlignVertical: "center",
   },
   scrollView: {
-    marginBottom: -100,
-    marginTop: -20,
+    marginBottom: -200,
+    marginTop: -50,
   },
   signInButtonWrap: {
     margin: 2,

@@ -10,11 +10,6 @@ export default function SignIn() {
         <Text style={Styles.header}>Sign In</Text>
       </View>
       <View style={Styles.inputWrap}>
-        <TextInput
-          style={Styles.input}
-          placeholder={"Search"}
-          selectionColor="#000000"
-        />
         <ReadAndDisplayUsers />
       </View>
     </SafeAreaView>
