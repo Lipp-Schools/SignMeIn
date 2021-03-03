@@ -69,7 +69,7 @@ const Styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 22,
+    marginTop: 25,
   },
   modal: {
     margin: 20,
@@ -83,7 +83,7 @@ const Styles = StyleSheet.create({
     paddingVertical: 25,
     paddingHorizontal: 90,
     backgroundColor: "#050A30",
-    marginBottom: 10 ,
+    marginBottom: 10,
   },
 });
 
