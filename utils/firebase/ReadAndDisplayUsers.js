@@ -40,36 +40,42 @@ const Users = () => {
   const [visible, setVisible] = useState(false);
   return (
     <View style={Styles.inputWrap}>
-      <View style={Styles.modalWrap}>
-        <Modal animationType="slide" transparent={false} visible={visible}>
-          <View style={Styles.modalWrap}>
-            <View style={Styles.modal}>
-              <TouchableOpacity onPress={() => CreateSignIn(user.)}>
-                <View style={Styles.buttonModal}>
-                  <Text style={Styles.buttonText}>Submit</Text>
-                </View>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => setVisible(false)}>
-                <View style={Styles.buttonModal}>
-                  <Text style={Styles.buttonText}>Return</Text>
-                </View>
-              </TouchableOpacity>
-            </View>
-          </View>
-        </Modal>
-      </View>
       <ScrollView style={Styles.scrollView}>
         {users?.map((user) => (
-          <View style={Styles.signInButtonWrap}>
-            <TouchableOpacity
-              style={Styles.signInButton}
-              onPress={() => setVisible(true)}
-            >
-              <Text key={user.id} style={Styles.signInButtonText}>
-                {titleCase(user.campus)}: {titleCase(user.child)}{" "}
-                {titleCase(user.father)} {titleCase(user.mother)}
-              </Text>
-            </TouchableOpacity>
+          <View>
+            <View key={user.id} style={Styles.signInButtonWrap}>
+              <TouchableOpacity
+                style={Styles.signInButton}
+                onPress={() => setVisible(true)}
+              >
+                <Text style={Styles.signInButtonText}>
+                  {titleCase(user.campus)}: {titleCase(user.child)}{" "}
+                  {titleCase(user.father)} {titleCase(user.mother)}
+                </Text>
+              </TouchableOpacity>
+              <View style={Styles.modalWrap}>
+                <Modal
+                  animationType="slide"
+                  transparent={false}
+                  visible={visible}
+                >
+                  <View style={Styles.modalWrap}>
+                    <View style={Styles.modal}>
+                      <TouchableOpacity onPress={() => CreateSignIn(user.id)}>
+                        <View style={Styles.buttonModal}>
+                          <Text style={Styles.buttonText}>Submit</Text>
+                        </View>
+                      </TouchableOpacity>
+                      <TouchableOpacity onPress={() => setVisible(false)}>
+                        <View style={Styles.buttonModal}>
+                          <Text style={Styles.buttonText}>Return</Text>
+                        </View>
+                      </TouchableOpacity>
+                    </View>
+                  </View>
+                </Modal>
+              </View>
+            </View>
           </View>
         ))}
       </ScrollView>
