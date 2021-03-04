@@ -74,7 +74,8 @@ const Styles = StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: "center",
-    fontSize: 25
+    fontSize: 25,
+    color: "#050A30"
   },
   buttonModal: {
     borderRadius: 40,
