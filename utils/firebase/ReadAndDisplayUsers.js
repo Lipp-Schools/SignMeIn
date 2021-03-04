@@ -11,7 +11,6 @@ import { db } from "./Firebase";
 import { Text } from "react-native";
 import Styles from "../Styles";
 import CreateSignIn from "../firebase/CreateSignIn";
-import CreateUser from "./CreateUser";
 
 const Users = () => {
   const [users, setUsers] = useState();
@@ -37,33 +36,14 @@ const Users = () => {
     };
   }, [setUsers]);
 
-  const [visible, setVisible] = useState(false);
   return (
     <View style={Styles.inputWrap}>
-      <View style={Styles.modalWrap}>
-        <Modal animationType="slide" transparent={false} visible={visible}>
-          <View style={Styles.modalWrap}>
-            <View style={Styles.modal}>
-              <TouchableOpacity onPress={() => CreateSignIn()}>
-                <View style={Styles.buttonModal}>
-                  <Text style={Styles.buttonText}>Submit</Text>
-                </View>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => setVisible(false)}>
-                <View style={Styles.buttonModal}>
-                  <Text style={Styles.buttonText}>Return</Text>
-                </View>
-              </TouchableOpacity>
-            </View>
-          </View>
-        </Modal>
-      </View>
       <ScrollView style={Styles.scrollView}>
         {users?.map((user) => (
           <View key={user.id} style={Styles.signInButtonWrap}>
             <TouchableOpacity
               style={Styles.signInButton}
-              onPress={() => setVisible(true)}
+              onPress={() => CreateSignIn(user.id)}
             >
               <Text style={Styles.signInButtonText}>
                 {titleCase(user.campus)}: {titleCase(user.child)}{" "}
