@@ -36,24 +36,34 @@ const Users = () => {
     };
   }, [setUsers]);
 
+  const [visible, setVisible] = useState();
   return (
-    <View style={Styles.inputWrap}>
-      <ScrollView style={Styles.scrollView}>
-        {users?.map((user) => (
-          <View key={user.id} style={Styles.signInButtonWrap}>
-            <TouchableOpacity
-              style={Styles.signInButton}
-              onPress={() => CreateSignIn(user.id)}
-            >
-              <Text style={Styles.signInButtonText}>
-                {titleCase(user.campus)}: {titleCase(user.child)}{" "}
-                {titleCase(user.father)} {titleCase(user.mother)}
-              </Text>
-            </TouchableOpacity>
+    <>
+      <View>
+        <Modal animationType="slide" transparent={false} visible={visible} style={Styles.modal}>
+          <View style={Styles.modalWrap}>
+            <Text style={Styles.modalText}>You've Signed In!</Text>
           </View>
-        ))}
-      </ScrollView>
-    </View>
+        </Modal>
+      </View>
+      <View style={Styles.inputWrap}>
+        <ScrollView style={Styles.scrollView}>
+          {users?.map((user) => (
+            <View key={user.id} style={Styles.signInButtonWrap}>
+              <TouchableOpacity
+                style={Styles.signInButton}
+                onPress={() => CreateSignIn(user.id)}
+              >
+                <Text style={Styles.signInButtonText}>
+                  {titleCase(user.campus)}: {titleCase(user.child)}{" "}
+                  {titleCase(user.father)} {titleCase(user.mother)}
+                </Text>
+              </TouchableOpacity>
+            </View>
+          ))}
+        </ScrollView>
+      </View>
+    </>
   );
 };
 

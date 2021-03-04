@@ -69,14 +69,12 @@ const Styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 25,
-  },
-  modal: {
-    margin: 20,
+    marginTop: 15,
   },
   modalText: {
     marginBottom: 15,
     textAlign: "center",
+    fontSize: 25
   },
   buttonModal: {
     borderRadius: 40,
