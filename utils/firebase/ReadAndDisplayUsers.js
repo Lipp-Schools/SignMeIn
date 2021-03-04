@@ -40,9 +40,19 @@ const Users = () => {
   return (
     <>
       <View>
-        <Modal animationType="slide" transparent={false} visible={visible} style={Styles.modal}>
+        <Modal
+          animationType="slide"
+          transparent={false}
+          visible={visible}
+          style={Styles.modal}
+        >
           <View style={Styles.modalWrap}>
             <Text style={Styles.modalText}>You've Signed In!</Text>
+            <TouchableOpacity onPress={() => setVisible(false)}>
+              <View style={Styles.button}>
+                <Text style={Styles.buttonText}>Ok</Text>
+              </View>
+            </TouchableOpacity>
           </View>
         </Modal>
       </View>
@@ -52,7 +62,10 @@ const Users = () => {
             <View key={user.id} style={Styles.signInButtonWrap}>
               <TouchableOpacity
                 style={Styles.signInButton}
-                onPress={() => CreateSignIn(user.id)}
+                onPress={() => {
+                  CreateSignIn(user.id);
+                  setVisible(true);
+                }}
               >
                 <Text style={Styles.signInButtonText}>
                   {titleCase(user.campus)}: {titleCase(user.child)}{" "}
