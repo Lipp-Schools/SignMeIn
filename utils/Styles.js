@@ -7,7 +7,7 @@ const Styles = StyleSheet.create({
   },
   headerWrap: {
     paddingTop: 25,
-    paddingBottom: 30,
+    paddingBottom: 10,
   },
   header: {
     color: "#7EC8E3",
