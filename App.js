@@ -20,16 +20,7 @@ export default function App() {
         shifting="false"
         activeColor="#fff"
       >
-        <Tab.Screen
-          name="Sign In"
-          component={SignIn}
-          options={{
-            tabBarLabel: "Sign In",
-            tabBarIcon: () => {
-              <Icon name="home" size={36} />;
-            },
-          }}
-        />
+        <Tab.Screen name="Sign In" component={SignIn} />
         <Tab.Screen name="Register" component={Register} />
       </Tab.Navigator>
     </NavigationContainer>
