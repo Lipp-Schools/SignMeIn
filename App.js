@@ -1,5 +1,4 @@
 import React from "react";
-import { View, Text, TabBarIOS } from "react-native";
 import Styles from "./utils/Styles";
 import Register from "./pages/Register";
 import SignIn from "./pages/SignIn";
@@ -8,11 +7,29 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 const Tab = createBottomTabNavigator();
 
+const tabBarStyle = {
+  activeTintColor: "#7EC8E3",
+  inactiveTintColor: "#FFFFFF",
+  style: { backgroundColor: "#050A30", height: 40 },
+};
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator tabBarOptions={{ activeTintColor: "#7EC8E3" }}>
-        <Tab.Screen name="Sign In" component={SignIn} />
+      <Tab.Navigator
+        tabBarOptions={tabBarStyle}
+        shifting="false"
+        activeColor="#fff"
+      >
+        <Tab.Screen
+          name="Sign In"
+          component={SignIn}
+          options={{
+            tabBarLabel: "Sign In",
+            tabBarIcon: () => {
+              <Icon name="home" size={36} />;
+            },
+          }}
+        />
         <Tab.Screen name="Register" component={Register} />
       </Tab.Navigator>
     </NavigationContainer>
