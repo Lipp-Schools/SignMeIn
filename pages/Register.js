@@ -63,7 +63,7 @@ export default function Register() {
         <View>
           <TouchableOpacity
             onPress={() => {
-              return CreateUser(user);
+              CreateUser(user);
             }}
           >
             <View style={Styles.button}>
