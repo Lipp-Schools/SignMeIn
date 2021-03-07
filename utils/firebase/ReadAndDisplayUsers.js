@@ -36,7 +36,7 @@ const Users = () => {
     };
   }, [setUsers]);
 
-  const [visible, setVisible] = useState();
+  const [visible, setVisible] = useState(false);
   return (
     <>
       <View>
