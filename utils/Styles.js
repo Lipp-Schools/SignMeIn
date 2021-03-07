@@ -26,7 +26,7 @@ const Styles = StyleSheet.create({
     height: 65,
     width: 300,
     borderRadius: 20,
-    marginBottom: 8,
+    marginBottom: 5,
     fontSize: 25,
     borderColor: "#000C66",
     borderWidth: 3.5,

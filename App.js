@@ -10,7 +10,7 @@ const Tab = createBottomTabNavigator();
 const tabBarStyle = {
   activeTintColor: "#7EC8E3",
   inactiveTintColor: "#FFFFFF",
-  style: { backgroundColor: "#050A30", height: 40 },
+  style: { backgroundColor: "#050A30", height: 40, justifyContent: "center"},
 };
 export default function App() {
   return (
