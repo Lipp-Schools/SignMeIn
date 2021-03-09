@@ -4,7 +4,7 @@ An application that conveniently facilitates simple sign in of children at LIPP.
 
 # Demo 
 
-![Demo](demo.gif)
+<img src="demo.gif" alt="demo" width=25% />
 
 ## Tech Stack
 
