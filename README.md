@@ -26,3 +26,5 @@ export default Config = {
     measurementId: "",
 }
 ```
+4. `npm install --save`
+5. `npm start`
