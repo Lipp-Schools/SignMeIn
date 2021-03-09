@@ -27,4 +27,26 @@ export default Config = {
 }
 ```
 4. `npm install --save`
-5. `npm start`
+5. `npm start`s
+
+## Firestore Schema
+
+### `users`
+
+```js
+{
+    campus: "",
+    child: "",
+    father: "",
+    mother: "",
+}
+```
+
+### `signins`
+
+```js
+{
+    id: "", // id = document ID/key of the user signing in
+    timestamp: // Unix timestamp to nearest second
+}
+```
