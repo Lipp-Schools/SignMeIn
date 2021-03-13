@@ -2,6 +2,10 @@
 
 An application that conveniently facilitates simple sign in of children at LIPP.
 
+# Demo 
+
+<img src="demo.gif" alt="demo" width=35% />
+
 ## Tech Stack
 
 - React Native
