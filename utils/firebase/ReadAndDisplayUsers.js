@@ -16,24 +16,32 @@ const Users = () => {
   const [users, setUsers] = useState();
 
   useEffect(() => {
-    let commit = true;
-
-    firebase
+    return firebase
       .firestore()
       .collection("users")
-      .get()
-      .then(({ docs }) => {
-        if (!commit) return;
-        setUsers(docs.map((doc) => ({ id: doc.id, ...doc.data() })));
-      })
-      .catch((error) => {
-        if (!commit) return;
-        console.error(error);
-      });
+      .onSnapshot((snapshot) => {
+        setUsers((users) => users ?? []);
 
-    return () => {
-      commit = false;
-    };
+        for (const { type, doc } of snapshot.docChanges())
+          switch (type) {
+            case "added":
+              setUsers((users) => [
+                ...(users ?? []),
+                { id: doc.id, ...doc.data() },
+              ]);
+              break;
+            case "modified":
+              setUsers((users) =>
+                users?.map((user) =>
+                  user.id === doc.id ? { id: doc.id, ...doc.data() } : user
+                )
+              );
+              break;
+            case "removed":
+              setUsers((users) => users?.filter((user) => user.id !== doc.id));
+              break;
+          }
+      }, console.error);
   }, [setUsers]);
 
   const [visible, setVisible] = useState(false);
