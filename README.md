@@ -17,7 +17,7 @@ An application that conveniently facilitates simple sign in of children at LIPP.
 3. In `Config.js`, create a `Config` object like so (the keys for each object can be found within your firebase settings):
 
 ```js
-export default Config = {
+const Config = {
   apiKey: "",
   authDomain: "",
   projectId: "",
@@ -26,6 +26,8 @@ export default Config = {
   appId: "",
   measurementId: "",
 };
+
+export default Config;
 ```
 
 4. `npm install --save`
