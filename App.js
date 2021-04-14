@@ -12,6 +12,7 @@ const tabBarStyle = {
   inactiveTintColor: "#FFFFFF",
   style: { backgroundColor: "#050A30", height: 40, justifyContent: "center"},
 };
+
 export default function App() {
   return (
     <NavigationContainer>
