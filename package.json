@@ -14,7 +14,7 @@
     "expo": "^40.0.1",
     "firebase": "7.9.0",
     "react": "^17.0.1",
-    "react-native": "^0.63.4",
+    "react-native": "^0.64.1",
     "react-native-gesture-handler": "^1.10.1",
     "react-native-picker": "^4.3.7",
     "react-native-screens": "^2.18.0",
